@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Clan PNL</title>
+  <link rel="stylesheet" href="/2-css/styles.css">
+  <link rel="stylesheet" href="/2-css/styles.css">
+
+</head>
+<body>
+
+  <header>
+    <img src="/3-Imagenes/logoPNL.png" alt="logo del clan" width="500px">
+    <h1>Clan PNL</h1>
+    <p>Primera Naval Latinoamericana</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="PNLindex.html">Inicio</a></li>
+      <li><a href="ReglasDelClan.html">Reglas del Clan</a></li>
+      <li><a href="Noticias.html">Noticias</a></li>
+      <li><a href="Eventos.html">Eventos</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Formulario de contacto</h2>
+    <form id="form-contacto">
+      <label for="nombre">Nombre (real):</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="nick">Nick ingame:</label>
+      <input type="text" id="nick" name="nick" required>
+
+      <label for="celular">Celular (si deseas):</label>
+      <input type="text" id="celular" name="celular">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>2025 Clan PNL - Primera Naval Latinoamericana</p>
+  </footer>
+
+  <script>
+    document.getElementById('form-contacto').addEventListener('submit', function(e) {
+      e.preventDefault(); // Previene el envío real
+      alert("✅ Datos enviados correctamente.\n¡Gracias por contactarte con el Clan PNL!");
+      this.reset(); // Limpia el formulario después del mensaje
+    });
+  </script>
+
+</body>
+</html>
