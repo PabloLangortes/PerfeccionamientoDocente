@@ -1,0 +1,54 @@
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.blog-post img {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-youtube,
+.btn-twitch {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-youtube {
+  background-color: #FF0000;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+}
+
+.btn-twitch {
+  background-color: #9146FF;
+  box-shadow: 0 4px 12px rgba(145, 70, 255, 0.4);
+}
+
+.btn-youtube:hover,
+.btn-twitch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
